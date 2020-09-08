@@ -12,8 +12,6 @@
     - [doc](#doc)
   - [Building](#Building)
     - [External Components](#External-Components)
-  - [Deployment](#Deployment)
-  - [Version Table](#Version-Table)
   - [License](#License)
 
 The hdbpp mysql project is a Tango Control system archival backend. The project includes all additional services required by the project, and consolidates various generic components into a single fetch and build cmake system.
@@ -71,26 +69,16 @@ The CMakeLists.txt file defines the tag or branch for each of these projects the
 
 | Component | Tag/Branch |
 |------|-----|
-| hdbpp-es | master |
-| hdbpp-cm | master |
-| libhdbpp | master |
-| libhdbpp-mysql | master |
+| hdbpp-es | v2.0.0 |
+| hdbpp-cm | v2.0.0 |
+| libhdbpp | v2.0.0 |
+| libhdbpp-mysql | libhdbpp2 |
 
 See the [build](doc/build.md) guide in the doc folder on how to build the project and its external dependencies.
 
 The various services are python scripts, these can be deployed as a script, or a built as Docker images with the supplied build system. Each service comes with a short README on how to build and deploy it:
 
 - [hdbpp-innodb-partition-management](services/hdbpp-innodb-partition-management)
-
-## Deployment
-
-See the [deployment](doc/deployment.md) guide in the doc folder on how to deploy the various elements of the project. This does not cover setting up a Tango Control HDB++ archival system, see the official documentations [here](https://tango-controls.readthedocs.io/en/latest) on complete HDB++ system deployment.
-
-## Version Table
-
-Since this project contains multiple elements, this table keeps an overview of the various versions.
-
-Coming soon
 
 ## License
 
